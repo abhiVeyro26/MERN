@@ -20,13 +20,21 @@ body {
 }
 
 .card {
-    width: 290px;
+    width: 320px;
     margin: 25px auto;
     padding: 20px;
     background-color: white;
-    border: 2px solid blue;
+    border: 2px solid;
     border-radius: 17px;
     text-align: center;
+}
+
+.blue-card {
+    border-color: blue;
+}
+
+.green-card {
+    border-color: green;
 }
 
 .avatar {
@@ -40,17 +48,23 @@ body {
     line-height: 94px;
 }
 
+.green-card .avatar {
+    background-color: green;
+}
+
 h2 {
     font-size: 24px;
     margin-bottom: 18px;
 }
 
 .bio {
-    height: 83px;
+    height: 100px;
     overflow: auto;
     border: 1px solid #cccccc;
     padding: 8px;
     text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .add-button {
