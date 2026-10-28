@@ -24,7 +24,7 @@ body {
     margin: 25px auto;
     padding: 20px;
     background-color: white;
-    border: 2px solid;
+    border: 2px solid blue;
     border-radius: 17px;
     text-align: center;
 }
@@ -51,18 +51,6 @@ h2 {
     border: 1px solid #cccccc;
     padding: 8px;
     text-align: left;
-}
-
-.blue-card {
-    border-color: #3158ff;
-}
-
-.green-card {
-    border-color: green;
-}
-
-.green-card .avatar {
-    background-color: green;
 }
 
 .add-button {
