@@ -6,39 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Club</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --primary-color: #315be8;
+            --background-color: #eef2ff;
+            --card-color: #ffffff;
+            --text-color: #243247;
+            --border-color: #d8deeb;
+
+            --space-small: 12px;
+            --space-medium: 22px;
+            --space-large: 35px;
+        }
+
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            padding: 24px;
-            background-color: #eef2ff;
-            color: #243247;
+            padding: var(--space-medium);
+            background-color: var(--background-color);
+            color: var(--text-color);
             font-family: 'Poppins', Arial, sans-serif;
             font-size: 16px;
             line-height: 1.6;
         }
 
         #hero {
-            background-color: #315be8;
-            color: white;
-            padding: 35px;
+            background-color: var(--primary-color);
+            color: var(--card-color);
+            padding: var(--space-large);
             text-align: center;
-            border-radius: 12px;
+            border-radius: var(--space-small);
         }
 
         h1 {
-            color: white;
+            color: var(--card-color);
             font-size: 42px;
             line-height: 1.2;
-            margin: 0 0 10px;
+            margin: 0 0 var(--space-small);
         }
 
         #hero p {
@@ -47,14 +58,14 @@
         }
 
         .card {
-            background-color: white;
-            padding: 22px;
-            margin-top: 22px;
-            border-radius: 12px;
+            background-color: var(--card-color);
+            padding: var(--space-medium);
+            margin-top: var(--space-medium);
+            border-radius: var(--space-small);
         }
 
         h2 {
-            color: #243247;
+            color: var(--text-color);
             font-size: 27px;
             line-height: 1.3;
         }
@@ -66,31 +77,49 @@
         }
 
         th {
-            background-color: #315be8;
-            color: white;
-            padding: 12px;
+            background-color: var(--primary-color);
+            color: var(--card-color);
+            padding: var(--space-small);
         }
 
         td {
-            padding: 12px;
-            border-bottom: 1px solid #d8deeb;
+            padding: var(--space-small);
+            border-bottom: 1px solid var(--border-color);
         }
 
         input {
             padding: 9px;
             font: inherit;
-            border: 1px solid #b9c4d8;
+            border: 1px solid var(--border-color);
             border-radius: 5px;
         }
 
         button {
-            background-color: #315be8;
-            color: white;
-            padding: 11px 20px;
+            background-color: var(--primary-color);
+            color: var(--card-color);
+            padding: var(--space-small) 20px;
             font: inherit;
             border: none;
             border-radius: 7px;
             cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: var(--space-small);
+            }
+
+            #hero {
+                padding: var(--space-medium);
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .card {
+                padding: var(--space-small);
+            }
         }
     </style>
 </head>
