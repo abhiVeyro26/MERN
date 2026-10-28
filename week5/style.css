@@ -1,14 +1,11 @@
 
 :root {
-    --primary-color: #315be8;
-    --background-color: #eef2ff;
-    --card-color: #ffffff;
+    --blue: #315be8;
+    --light-blue: #eef2ff;
+    --white: #ffffff;
     --text-color: #243247;
     --border-color: #d8deeb;
-
-    --space-small: 12px;
-    --space-medium: 22px;
-    --space-large: 35px;
+    --space: 22px;
 }
 
 /* Universal selector */
@@ -19,8 +16,8 @@
 /* Element selector */
 body {
     margin: 0;
-    padding: var(--space-medium);
-    background-color: var(--background-color);
+    padding: var(--space);
+    background-color: var(--light-blue);
     color: var(--text-color);
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 16px;
@@ -29,19 +26,19 @@ body {
 
 /* ID selector */
 #hero {
-    background-color: var(--primary-color);
-    color: var(--card-color);
-    padding: var(--space-large);
+    background-color: var(--blue);
+    color: var(--white);
     text-align: center;
-    border-radius: var(--space-small);
+    padding: 35px;
+    border-radius: 12px;
 }
 
 /* Element selector */
 h1 {
-    color: var(--card-color);
+    color: var(--white);
     font-size: 42px;
     line-height: 1.2;
-    margin: 0 0 var(--space-small);
+    margin: 0 0 12px;
 }
 
 #hero p {
@@ -51,10 +48,10 @@ h1 {
 
 /* Class selector */
 .card {
-    background-color: var(--card-color);
-    padding: var(--space-medium);
-    margin-top: var(--space-medium);
-    border-radius: var(--space-small);
+    background-color: var(--white);
+    padding: var(--space);
+    margin-top: var(--space);
+    border-radius: 12px;
 }
 
 h2 {
@@ -70,13 +67,12 @@ table {
 }
 
 th {
-    background-color: var(--primary-color);
-    color: var(--card-color);
-    padding: var(--space-small);
+    background-color: var(--blue);
+    color: var(--white);
 }
 
-td {
-    padding: var(--space-small);
+th, td {
+    padding: 12px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -88,30 +84,11 @@ input {
 }
 
 button {
-    background-color: var(--primary-color);
-    color: var(--card-color);
-    padding: var(--space-small) 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12px 20px;
     font: inherit;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-}
-
-/* Responsive styling */
-@media (max-width: 600px) {
-    body {
-        padding: var(--space-small);
-    }
-
-    #hero {
-        padding: var(--space-medium);
-    }
-
-    h1 {
-        font-size: 34px;
-    }
-
-    .card {
-        padding: var(--space-small);
-    }
 }
