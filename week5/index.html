@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Club</title>
 
-    <style>
-        /* Task 5.2: Four CSS selectors */
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <style>
         * {
             box-sizing: border-box;
         }
@@ -17,21 +20,30 @@
             margin: 0;
             padding: 24px;
             background-color: #eef2ff;
-            color: #172033;
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            color: white;
-            text-align: center;
+            color: #243247;
+            font-family: 'Poppins', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
         }
 
         #hero {
             background-color: #315be8;
+            color: white;
             padding: 35px;
             text-align: center;
             border-radius: 12px;
+        }
+
+        h1 {
             color: white;
+            font-size: 42px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+
+        #hero p {
+            font-size: 20px;
+            margin: 0;
         }
 
         .card {
@@ -39,6 +51,46 @@
             padding: 22px;
             margin-top: 22px;
             border-radius: 12px;
+        }
+
+        h2 {
+            color: #243247;
+            font-size: 27px;
+            line-height: 1.3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            background-color: #315be8;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #d8deeb;
+        }
+
+        input {
+            padding: 9px;
+            font: inherit;
+            border: 1px solid #b9c4d8;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #315be8;
+            color: white;
+            padding: 11px 20px;
+            font: inherit;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -53,7 +105,7 @@
     <section class="card">
         <h2>Upcoming Events</h2>
 
-        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+        <table>
             <thead>
                 <tr>
                     <th>Event</th>
