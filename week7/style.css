@@ -8,6 +8,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Navbar */
+
 .navbar {
     background-color: #14223d;
     color: white;
@@ -35,6 +37,39 @@ body {
 }
 
 .signup-button {
+    background-color: #ffb900;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Task 7.2 - Banner */
+
+.banner {
+    background-color: #3158e8;
+    color: white;
+    height: 270px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 32px;
+    margin: 0 0 12px;
+}
+
+.banner p {
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.start-button {
     background-color: #ffb900;
     border: none;
     padding: 10px 20px;
