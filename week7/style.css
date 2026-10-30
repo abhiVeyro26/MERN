@@ -45,7 +45,7 @@ body {
     cursor: pointer;
 }
 
-/* Task 7.2 - Banner */
+/* Banner */
 
 .banner {
     background-color: #3158e8;
@@ -76,4 +76,22 @@ body {
     border-radius: 7px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Task 7.3 - Cards */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+}
+
+.card {
+    flex: 1 1 200px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
