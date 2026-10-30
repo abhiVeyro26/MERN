@@ -39,9 +39,26 @@ body {
 
 .main {
     background-color: #eaf0f8;
-    padding: 20px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.box {
+    background-color: white;
+    padding: 15px;
     border-radius: 10px;
-    min-height: 230px;
+    min-height: 70px;
+}
+
+.box h3 {
+    margin: 0;
+}
+
+.box p {
+    margin: 5px 0 0;
 }
 
 .footer {
