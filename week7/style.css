@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #14223d;
+    color: white;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signup-button {
+    background-color: #ffb900;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
