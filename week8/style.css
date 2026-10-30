@@ -86,3 +86,16 @@ body {
     height: 120px;
     border-radius: 10px;
 }
+
+/* Mobile screen */
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "head"
+            "side"
+            "main"
+            "foot";
+    }
+}
