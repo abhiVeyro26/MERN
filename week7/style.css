@@ -96,3 +96,20 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+/* Responsive testing */
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+}
