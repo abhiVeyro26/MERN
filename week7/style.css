@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
 }
 
 /* Navbar */
@@ -78,7 +79,7 @@ body {
     cursor: pointer;
 }
 
-/* Task 7.3 - Cards */
+/* Cards */
 
 .cards {
     display: flex;
